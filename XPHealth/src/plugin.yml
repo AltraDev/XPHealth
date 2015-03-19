@@ -1,0 +1,17 @@
+name: XPHealth
+version: 1
+main: me.AltraDev.xphealth.XPHealth
+description: Makes you XP levels affect how much health you have.
+commands:
+    xphealth:
+        usage: /<command>
+        description: Toggles the XPHealth plugin.
+        aliases: xph
+    sxphealth:
+        usage: /<command>
+        description: Toggles the XPHealth plugin silently and only you see the enable/disable.
+        aliases: sxph
+permissions:
+    XPHealth.toggle:
+        description: Enables users to toggle the XPHealth plugin.
+        default: op
