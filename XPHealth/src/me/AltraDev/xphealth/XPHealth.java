@@ -37,14 +37,14 @@ public class XPHealth extends JavaPlugin implements Listener {
 				return true;
 			}
 			
-			if (xphEnabled == false) {
+			if (!xphEnabled) {
 				xphEnabled = true;
 				player.setHealthScale(player.getLevel() + 20);
 				player.setMaxHealth(player.getLevel() + 20.0);
 				Bukkit.broadcastMessage(ChatColor.GOLD + "XPHealth has been " + ChatColor.GREEN + "ENABLED");
 			}
 			else {
-				if (xphEnabled == true) {
+				if (xphEnabled) {
 					xphEnabled = false;
 					player.setHealthScale(20);
 					player.setMaxHealth(20.0);
